@@ -10,6 +10,10 @@ function getFormInput(){
 	window.location.href = searchUrl;
 }
 
+input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === getFormInput) {
+        document.getElementById("myBtn").click();
 
 //["Oops! You broke the internet. Good Job. *SlowClap*",
 //"AT&T has denied your service due to you forget to pay your bill. Be an Adult.",
